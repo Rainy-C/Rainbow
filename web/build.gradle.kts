@@ -41,9 +41,6 @@ android {
     }
 }
 
-tasks.named("preBuild") {
-    dependsOn(buildWebUi)
-}
 
 dependencies {
     implementation(libs.androidx.core.ktx)
