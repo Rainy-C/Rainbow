@@ -6,7 +6,7 @@ android {
     namespace = "me.rerere.material3"
     sourceSets {
         named("main") {
-            kotlin.srcDir("material-color-utilities/kotlin")
+            kotlin.directories.add("material-color-utilities/kotlin")
         }
     }
 }
