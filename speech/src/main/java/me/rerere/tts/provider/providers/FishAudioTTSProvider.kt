@@ -58,7 +58,7 @@ class FishAudioTTSProvider : TTSProvider<TTSProviderSetting.FishAudio> {
         val response = httpClient.newCall(httpRequest).execute()
 
         if (!response.isSuccessful) {
-            val errorBody = response.body?.string()
+            val errorBody = response.body.string()
             Log.e(TAG, "generateSpeech: ${response.code} ${response.message}")
             Log.e(TAG, "generateSpeech: $errorBody")
             throw TTSProviderException(
